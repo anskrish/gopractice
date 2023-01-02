@@ -1,17 +1,21 @@
 package main
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("enter your name: ")
-	kr()
-}
-func kr() {
-	a := bufio.NewReader(os.Stdin)
-	b, _ := a.ReadString('\n')
-	fmt.Println("Your name is: ", b)
+	//below is to show variaous ways of defining variables in GO
+
+	//Option 1
+	var a string
+	a = "krishna"
+	fmt.Println(a)
+
+	//Option 2
+	b := "krishna raju"
+	fmt.Println(b)
+
+	//Option 3
+
+	var c = "rk"
+	fmt.Println(c)
 }
